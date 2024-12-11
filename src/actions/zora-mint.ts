@@ -59,5 +59,5 @@ const actionClaimant: ActionClaimant = {
 
 export const eventActionPayload = {
   actionClaimant,
-  actionSteps: [collectionActionStep, tokenIdActionStep, quantityActionStep],
+  actionSteps: [quantityActionStep],
 };
