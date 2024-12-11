@@ -1,11 +1,10 @@
+import { Address } from "viem";
 import { eventActionPayload } from "./actions/zora-mint";
 import { core } from "./config";
 import { deployBoost } from "./deploy";
 
 (async () => {
-  const budget = core.ManagedBudget(
-    "0x072c62507b8683fe70c2ad442f01fbe0bea3433e"
-  );
+  const budget = core.ManagedBudget(process.env.BUDGET_ADDRESS as Address);
 
   await deployBoost(core, budget, eventActionPayload)
 })();
