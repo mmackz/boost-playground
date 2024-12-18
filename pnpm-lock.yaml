@@ -9,17 +9,20 @@ importers:
   .:
     dependencies:
       '@boostxyz/sdk':
-        specifier: 2.2.1
-        version: 2.2.1(@wagmi/core@2.15.2(typescript@5.7.2)(viem@2.21.54(typescript@5.7.2)))(abitype@1.0.7(typescript@5.7.2))(viem@2.21.54(typescript@5.7.2))
+        specifier: 5.1.1
+        version: 5.1.1(@wagmi/core@2.15.2(typescript@5.7.2)(viem@2.21.54(typescript@5.7.2)))(abitype@1.0.7(typescript@5.7.2))(viem@2.21.54(typescript@5.7.2))
       '@boostxyz/signatures':
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.2.0
+        version: 1.2.0
       '@dotenvx/dotenvx':
         specifier: ^1.29.0
         version: 1.29.0
       '@wagmi/core':
         specifier: ^2.15.2
         version: 2.15.2(typescript@5.7.2)(viem@2.21.54(typescript@5.7.2))
+      commander:
+        specifier: ^12.1.0
+        version: 12.1.0
       viem:
         specifier: ^2.21.54
         version: 2.21.54(typescript@5.7.2)
@@ -39,15 +42,15 @@ packages:
   '@adraffy/ens-normalize@1.11.0':
     resolution: {integrity: sha512-/3DDPKHqqIqxUULp8yP4zODUY1i+2xvVWsv8A79xGWdCAG+8sb0hRh0Rk2QyOJUnnbyPUAZYcpBuRe3nS2OIUg==}
 
-  '@boostxyz/sdk@2.2.1':
-    resolution: {integrity: sha512-NQyK47UqwvwzSUdBS07admHSBRdzaweqKd11ASIMEVwcwLuO3aXe9qw11tWBk39lXd9X92x8zN0hw0/60W37PA==}
+  '@boostxyz/sdk@5.1.1':
+    resolution: {integrity: sha512-qSA7GZyhxGw73AZaZpiBzYmWlQQlBR6w2osDKfnb+6tWo0cdjguymT+ob7WvMC+CldSx8gTkRuaoCnb147yAdw==}
     peerDependencies:
       '@wagmi/core': 2.x
       abitype: '1'
       viem: 2.x
 
-  '@boostxyz/signatures@1.1.0':
-    resolution: {integrity: sha512-TORNs2nhm5WwEvehWA6QNXN5+Je9qwBgkHLPAId8CwoNuvBZ4B/FSuXbPZDt29xVu39U9kmx1YTsSKxe4jlCog==}
+  '@boostxyz/signatures@1.2.0':
+    resolution: {integrity: sha512-E4mkvJOqBbytG1Pm0xyLC+me3YMLgxD2HInVmDqyZChuzEBMbefZx4Ew4rkPkrVl2suziJ930mcxhxtuYsImzA==}
 
   '@dotenvx/dotenvx@1.29.0':
     resolution: {integrity: sha512-lyITV6hPsj6XgafFzm7j6tPTvuPP2FRW6kuVhblDpw7TneZcVjGWXcQRn/QX2bBigqPtCWQtXvzWMhW7Nj0olA==}
@@ -427,6 +430,10 @@ packages:
   commander@11.1.0:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
+
+  commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
 
   commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
@@ -832,14 +839,14 @@ snapshots:
 
   '@adraffy/ens-normalize@1.11.0': {}
 
-  '@boostxyz/sdk@2.2.1(@wagmi/core@2.15.2(typescript@5.7.2)(viem@2.21.54(typescript@5.7.2)))(abitype@1.0.7(typescript@5.7.2))(viem@2.21.54(typescript@5.7.2))':
+  '@boostxyz/sdk@5.1.1(@wagmi/core@2.15.2(typescript@5.7.2)(viem@2.21.54(typescript@5.7.2)))(abitype@1.0.7(typescript@5.7.2))(viem@2.21.54(typescript@5.7.2))':
     dependencies:
       '@wagmi/core': 2.15.2(typescript@5.7.2)(viem@2.21.54(typescript@5.7.2))
       abitype: 1.0.7(typescript@5.7.2)
       ts-pattern: 5.5.0
       viem: 2.21.54(typescript@5.7.2)
 
-  '@boostxyz/signatures@1.1.0': {}
+  '@boostxyz/signatures@1.2.0': {}
 
   '@dotenvx/dotenvx@1.29.0':
     dependencies:
@@ -1098,6 +1105,8 @@ snapshots:
   color-name@1.1.4: {}
 
   commander@11.1.0: {}
+
+  commander@12.1.0: {}
 
   commander@4.1.1: {}
 
